@@ -54,7 +54,16 @@ class Login extends Component {
             password: this.state.pwd
             
           }
-          this.props.loginUser(postData);
+          this.props.loginUser(postData)
+          .then(res=>{
+            //if response successful redirect to dashborad else display error message.
+
+            //But when I run the app, dislays error "this.props.loginUser() is undefined"
+
+            //How do I redirect to Dashboard after login
+          }
+
+          );
     
        
         }
